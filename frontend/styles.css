@@ -69,14 +69,23 @@ svg:hover {
 
 }
 
-.resources {
+.begin {
   position: fixed;
   z-index: 0;
-  width: 35%;
+  width: 20%;
   top: 50%;
-  left: 50%;
+  left: 20%;
   transform: translate(-50%, -50%);
   }
+
+.new {
+    position: fixed;
+    z-index: 0;
+    width: 20%;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    }
 
 
 
@@ -90,7 +99,7 @@ svg:hover {
 }
 
 .animate-draw {
-  animation: display-exit 20s linear;
+  animation: display-exit 1s linear;
 }
 
 @keyframes display-exit {

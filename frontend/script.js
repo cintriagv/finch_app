@@ -23,12 +23,23 @@ function object_sizes() { return {
 };
 }
 
-function basic_call () {
+function call_begin () {
 
-    console.log("basic_call was just clicked")
+    console.log("call_begin was just clicked")
 
     var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open( "POST", "http://127.0.0.1:3000/", true ); // false for synchronous request
+    xmlHttp.open( "POST", "http://localhost:3000/", true ); // false for synchronous request
+    xmlHttp.send( null );
+    return xmlHttp.responseText;
+    
+};
+
+function call_new () {
+
+    console.log("call_new was just clicked")
+
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "POST", "http://localhost:4000/", true ); // false for synchronous request
     xmlHttp.send( null );
     return xmlHttp.responseText;
     
